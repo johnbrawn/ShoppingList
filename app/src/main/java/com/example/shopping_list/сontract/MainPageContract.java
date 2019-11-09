@@ -13,6 +13,7 @@ public interface MainPageContract {
 
         String getProduct();
         void setProduct();
+        int getLengthProductName();
     }
 
     interface Presenter {

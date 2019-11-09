@@ -97,6 +97,11 @@ public class MainPageFragment extends Fragment implements MainPageContract.View,
     }
 
     @Override
+    public int getLengthProductName() {
+        return product.length();
+    }
+
+    @Override
     public void showMessage(String message) {
         Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
     }

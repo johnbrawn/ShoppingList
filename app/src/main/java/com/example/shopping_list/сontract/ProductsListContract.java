@@ -15,10 +15,10 @@ public interface ProductsListContract {
     }
 
     interface Model {
-        void setData(String product);
-        void saveProductsList();
         ArrayList getProducts();
         void setContext(Context context);
+        void setProduct(String name);
+        void saveProductsList();
     }
 
     interface ModelWrite {
@@ -28,6 +28,8 @@ public interface ProductsListContract {
         void setProductsToList();
         void createFile(Context context);
         void setProduct(String productName);
+        void setData(String product);
+        void saveProductsList();
     }
 
     interface ModelRead {

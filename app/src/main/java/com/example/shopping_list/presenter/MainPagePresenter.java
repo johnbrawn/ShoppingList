@@ -25,8 +25,10 @@ public class MainPagePresenter implements MainPageContract.Presenter {
     @Override
     public void addButtonClick(String text) {
         if (view != null) {
-            view.showMessage(text);
-            model.setData(text);
+            if (view.getLengthProductName() > 0) {
+                view.showMessage(text);
+                model.setProduct(text);
+            }
         }
     }
 
